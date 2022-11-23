@@ -6,7 +6,7 @@ class Student{
 
     int usn;
     char sem;
-    int marks[] = new int[10];
+    int []marks= new int[10];
     <TO DO:Add Constructor to initialize sem and usn>
         Student(int usn,char sem){
         this.usn = usn;
@@ -24,12 +24,12 @@ class Student{
     public void setUsn(int usn) {
         Scanner sc  = new Scanner(System.in);
         this.usn=sc.nextInt();
-
+//         usn = 91;
     }
 
 <TO DO : ADD METHOD TO SET MARKS>
     
-    public setMarks(int []marks){
+    public setMarks()(int []marks){
     this.marks = marks;
 }
 
@@ -47,7 +47,7 @@ class Student{
     
     <TO DO: Add a method to find maximum marks>
         
-    public int max_Marks{
+    public int max_Marks(){
     int temp=0;
         for(int x:marks){
             if(x>temp){
@@ -79,8 +79,8 @@ public class assignemntOne {
      eeesStudent2.setMarks(marks2);
 
     <TO DO: Print the max marks of both students>
-     System.out.println("Maximum marks of student 1 and 2 are "+eeeStudent1.max_Marks,eeeStudent2.max_Marks);
-
+     System.out.println("Maximum marks of student1 is "+eeeStudent1.max_Marks());
+     System.out.println("Maximum marks of student2 is "+eeeStudent2.max_Marks());
     <TO DO: Take input of a subject index from user and print
     which student has more marks in that subject>
     int index = input.nextInt();
